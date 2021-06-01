@@ -111,7 +111,7 @@ _
  * Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 ..*You update the hosts file to include IP adress of host vm
  * Which URL do you navigate to in order to check that the ELK server is running?
-
+..*http://20.194.61.22:5601/app/kibana#/home
 
  * As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
