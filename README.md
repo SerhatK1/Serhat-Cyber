@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[Netowkr Diagram](https://github.com/SerhatK1/Serhat-Cyber/blob/main/Diagram/NetworkDiagram.PNG)
+[Network Diagram](https://github.com/SerhatK1/Serhat-Cyber/blob/main/Diagram/NetworkDiagram.PNG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Network diagram file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  [Filebeat Playbook](https://github.com/SerhatK1/Serhat-Cyber/blob/main/Ansible/filebeat-playbook.yml.txt)
 
 This document contains the following details:
 - Description of the Topologu
@@ -48,11 +48,11 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump box red-vm machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-..* Add whitelisted IP addresses_
+..* 101.189.102.224
 
-Machines within the network can only be accessed by Red-VM.
+Machines within the network can only be accessed by Red-Team-VM.
 * Which machine did you allow to access your ELK VM? What was its IP address?
-..* Red-VM - 20.36.34.172
+..* Red-Team-VM - 20.36.34.172
 
 A summary of the access policies in place can be found in the table below.
 
@@ -104,7 +104,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 ..* Copy the filebeat config file to /etc/ansible/roles.
 ..* Update the filebeat-playbook.yml file to include 1106 and 1806
-..* Run the playbook, and navigate to ____ to check that the installation worked as expected.
+..* Run the playbook, and navigate to http://20.194.61.22:5601/app/kibana#/home to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 ..* Which file is the playbook? Where do you copy it?
