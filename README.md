@@ -105,11 +105,13 @@ SSH into the control node and follow the steps below:
  * Copy the filebeat config file to /etc/ansible/roles.
  * Update the filebeat-playbook.yml file to include 1106 and 1806
  * Run the playbook, and navigate to http://20.194.61.22:5601/app/kibana#/home to check that the installation worked as expected.
-_
+ 
  * Which file is the playbook? Where do you copy it?
 ..*filebeat-playbook.yml - /etc/ansible/roles
+
  * Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-..*You update the hosts file to include IP adress of host vm
+..*You update the hosts file to include IP address of host vm
+
  * Which URL do you navigate to in order to check that the ELK server is running?
 ..*http://20.194.61.22:5601/app/kibana#/home
 
